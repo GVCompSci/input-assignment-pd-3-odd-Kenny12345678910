@@ -1,11 +1,18 @@
-# python-Input-and-operations
 name=input('please input your name')
 number=input('please input your phone number')
 product=input('please enter the name of the product you would like to purchase:')
-bagel=("Price:123456789")
-quantity=input("Quantity to purchase:")
-
+price=float(input("Price of the item"))
+quantity=int(input("Quantity to purchase:"))
+subtotal=(price*quantity)
+tax=(subtotal*0.06)
+total=(subtotal+tax)
+print("")
 print(name)
 print(number)
 print('purchase information:')
-
+print(product, 'Qty:',quantity)
+print(" "'Price:',price)
+print("")
+print("")
+print("Subtotal:$",subtotal,'tax:$',tax)
+print("Total: $",total)
